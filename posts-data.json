@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "post1",
+      "title": "This is the First Post",
+      "description": "A detailed description of the first post. It can contain any relevant information about the post content.",
+      "date": 1717849372512
+    },
+    {
+      "id": "post2",
+      "title": "Another Interesting Post",
+      "description": "This is the content of the second post. You can add more test posts with varied data for comprehensive testing.",
+      "date": 1717849433024
+    },
+    {
+      "id": "post3",
+      "title": "Exploring Features with a Post",
+      "description": "This post can be used to test specific functionalities related to posts in your application. You can modify the data accordingly.",
+      "date": 1717849493536
+    }
+  ]
+}
