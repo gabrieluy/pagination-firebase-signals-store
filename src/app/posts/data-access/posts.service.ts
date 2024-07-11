@@ -9,19 +9,18 @@ import {
 } from '@angular/fire/firestore';
 import { assignTypes } from '@core/utils/assign-type.util';
 import { Injectable, inject } from '@angular/core';
-import { filter, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { PostsListConfig } from './interfaces/post-list-config.interface';
 import { Post } from './interfaces/post.interface';
-
-const PATH = 'posts';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PostsService {
+  private readonly PATH = 'posts';
   private readonly firestore = inject(Firestore);
-  private readonly collection = collection(this.firestore, PATH).withConverter(assignTypes<Post>());
+  private readonly collection = collection(this.firestore, this.PATH).withConverter(assignTypes<Post>());
 
   getPosts$(config: PostsListConfig): Observable<Post[]> {
     const { limit: qLimit, page, pageLastElements } = config;
