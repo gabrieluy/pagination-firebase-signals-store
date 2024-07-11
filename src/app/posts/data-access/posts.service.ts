@@ -9,7 +9,7 @@ import {
 } from '@angular/fire/firestore';
 import { assignTypes } from '@core/utils/assign-type.util';
 import { Injectable, inject } from '@angular/core';
-import { Observable } from 'rxjs';
+import { filter, Observable } from 'rxjs';
 
 import { PostsListConfig } from './interfaces/post-list-config.interface';
 import { Post } from './interfaces/post.interface';

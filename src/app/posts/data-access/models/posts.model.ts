@@ -18,7 +18,6 @@ export const postListInitialState: PostListState = {
   listConfig: {
     page: 1,
     limit: 4,
-    filters: {},
     pageLastElements: new Map<number, Post>(),
   },
   posts: {
