@@ -11,7 +11,7 @@ import { assignTypes } from '@core/utils/assign-type.util';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { PostsListConfig } from './models/posts.model';
+import { PostsListConfig } from './interfaces/post-list-config.interface';
 import { Post } from './interfaces/post.interface';
 
 const PATH = 'posts';

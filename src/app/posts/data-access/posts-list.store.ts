@@ -6,9 +6,9 @@ import { pipe, switchMap, tap } from 'rxjs';
 
 import {
   postListInitialState,
-  PostsListConfig,
   PostListState,
 } from './models/posts.model';
+import { PostsListConfig } from './interfaces/post-list-config.interface';
 import { Post } from './interfaces/post.interface';
 import { PostsService } from './posts.service';
 
