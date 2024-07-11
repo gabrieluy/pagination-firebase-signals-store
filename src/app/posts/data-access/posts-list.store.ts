@@ -30,12 +30,12 @@ export const PostsListStore = signalStore(
           service.getPosts$(listConfig).pipe(
             tapResponse({
               next: (entities: Post[]) => {
-                const newListConfig = listConfig.pageLastElements.set(listConfig.page, entities[entities.length - 1]);
+                const newPageLastElements = listConfig.pageLastElements.set(listConfig.page, entities[entities.length - 1]);
                 patchState(store, {
                   posts: { entitiesCount: entities.length, entities },
                   listConfig: {
                     ...listConfig,
-                    pageLastElements: newListConfig,
+                    pageLastElements: newPageLastElements,
                   },
                   status: 'success',
                 });
