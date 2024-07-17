@@ -13,7 +13,7 @@ Run `npm install` for installing dependencies.
 
 In case you don't have the firebase cli you need to install it using `npm i -g firebase-tools`
 
-Also, you need to enable webframeworks using the following command `firebase: experiments:enable webframeworks`
+Also, you need to enable webframeworks using the following command `firebase experiments:enable webframeworks`
 
 #### Start emulators
 
